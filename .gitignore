@@ -9,11 +9,11 @@ __pycache__/
 .env
 
 # Local data (not versioned)
-data/*
 *.csv
 *.csv.gz
 *.pkl
 *.json
+*.parquet
 
 # PyCharm
 .idea/
