@@ -22,6 +22,16 @@ After downloading the CSV, generate the cleaned dataset using the provided scrip
 ```bash
 python scripts/build_aircraft_cleaned.py
 ```
+
+2. Load the cleaned data into SQLite
+Next, load the cleaned Parquet file into a local SQLite database:
+
+python scripts/load_aircraft_into_sqlite.py
+```bash
+python scripts/load_aircraft_into_sqlite.py
+```
+This will create: data/aircraft.sqlite3
+and populate the aircraft table.
 ## Notes
 
 - Do **not** commit CSV or generated files.
