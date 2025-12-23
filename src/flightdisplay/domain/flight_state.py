@@ -7,5 +7,6 @@ from typing import Optional
 class FlightState:
     aircraft: Aircraft
     position: Position
+    callsign: Optional[str] = None
     velocity: Optional[float] = None
     heading: Optional[float] = None
