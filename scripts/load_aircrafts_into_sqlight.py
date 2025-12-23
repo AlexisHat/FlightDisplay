@@ -68,7 +68,11 @@ def load_parquet_into_db():
             VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
             (
-                row["icao24"],
+                str(row["icao24"])
+                .strip()
+                .strip("'")
+                .strip('"')
+                .lower(),
                 row["country"],
                 row["manufacturer"],
                 row["model"],
